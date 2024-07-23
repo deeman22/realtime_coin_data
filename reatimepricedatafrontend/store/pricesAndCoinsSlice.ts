@@ -50,12 +50,12 @@ const initialState: PricesAndCoinsState = {
 };
 
 export const fetchCoins = createAsyncThunk('coins/fetchCoins', async () => {
-  const response = await axios.get(`https://realtimepricedatabackend-2.onrender.com/coin`);
+  const response = await axios.get(`http://localhost:8080/real-time-data/coin`);
   return response.data;
 });
 
 export const fetchPrices = createAsyncThunk('prices/fetchPrices', async (coinId: string) => {
-  const response = await axios.get(`https://realtimepricedatabackend-2.onrender.com/price/${coinId}?count=20`);
+  const response = await axios.get(`http://localhost:8080/real-time-data/price/${coinId}?count=20`);
   return response.data;
 });
 
