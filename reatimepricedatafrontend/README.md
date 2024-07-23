@@ -26,7 +26,7 @@ This project is a React application that interfaces with a backend service to pr
 ## Setup & Run
 
 ```sh
- cd client
+ cd reatimepricedatafrontend
  npm install
  npm run build
  npm start
